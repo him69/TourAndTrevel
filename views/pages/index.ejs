@@ -60,28 +60,39 @@
                     <h2 class="fw-bold fs-1 ">Explore all tour of vietnam with us</h2>
                     <p class="font_primary my-4">
                         Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
-                        makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig kasm,
+                        makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
+                        kasm,
                         att osobel, det, konkemi filoitet. Neonetik hedössa i dinining sass pretenar som kalirtad.
                         Elektroosmos rening. Benebel pompekunskap att berade. Nåvis teraber. Vahet nynirade heterolaren.
-                        Resam tregt makroseranar vaheten. Dertad ärehest än vådade nåliga en homoning rev. Lus öputt. Depad
+                        Resam tregt makroseranar vaheten. Dertad ärehest än vådade nåliga en homoning rev. Lus öputt.
+                        Depad
                         kront, i tetraska kaling nedöss. Desyre sabelt till vänera pest. Syligt vobba att antisyren i
                         våsyment då trans, och onat. Delilig assade dihere, dor.
                     </p>
                 </div>
                 <!-- slider -->
-                <div class="splide destination-slider " style="">
-                    <div class="splide__track">
-                        <ul class="splide__list" >
-                            <li class="splide__slide"><imgm class="h-100 w-100" src="<%= basePath %>img/sl1.jpg"
-                                    alt="Image 1">
+                <div class="splide destination-slider rounded-2" style="">
+                    <div class="splide__track rounded-2">
+                        <ul class="splide__list rounded-2">
+                            <li class="splide__slide boxshadow rounded-2">
+                                <p class="text-white m-5 fs-6 fw-bold position-relative z-3">Ha Long Bay</p>
+                                <img class="h-100 w-100" src="<%= basePath %>img/sl1.jpg" alt="Image 1">
                             </li>
-                            <li class="splide__slide"><imgm class="h-100 w-100"  src="<%= basePath %>img/sl2.jpg"
-                                    alt="Image 2"></li>
-                            <li class="splide__slide"><imgm class="h-100 w-100"  src="<%= basePath %>img/sl3.jpg"
-                                    alt="Image 3"></li>
-                            <li class="splide__slide"><imgm class="h-100 w-100"  src="<%= basePath %>img/sl4.jpg"
-                                    alt="Image 2"></li>
-                            <li class="splide__slide"><imgm class="h-100 w-100" style="height: inherit;" src="<%= basePath %>img/sl1.jpg"
+                            <li class="splide__slide boxshadow rounded-2">
+                                <p class="text-white m-5 fs-6 fw-bold position-relative z-3">Ha Long Bay</p>
+                                <img class="h-100 w-100" src="<%= basePath %>img/sl2.jpg" alt="Image 2">
+                            </li>
+                            <li class="splide__slide boxshadow rounded-2">
+                                <p class="text-white m-5 fs-6 fw-bold position-relative z-3">Ha Long Bay</p>
+                                <img class="h-100 w-100" src="<%= basePath %>img/sl3.jpg" alt="Image 3">
+                            </li>
+                            <li class="splide__slide boxshadow rounded-2">
+                                <p class="text-white m-5 fs-6 fw-bold position-relative z-3">Ha Long Bay</p>
+                                <img class="h-100 w-100" src="<%= basePath %>img/sl4.jpg" alt="Image 2">
+                            </li>
+                            <li class="splide__slide boxshadow rounded-2">
+                                <p class="text-white m-5 fs-6 fw-bold position-relative z-3">Ha Long Bay</p>
+                                <img class="h-100 w-100" style="height: inherit;" src="<%= basePath %>img/sl1.jpg"
                                     alt="Image 1">
                             </li>
                         </ul>
@@ -152,19 +163,20 @@
                 thumbnailSlider.on('click', function (slide) {
                     mainSlider.go(slide.index);
                 });
-                var splide = new Splide( '.destination-slider', {
+                
+                var splide = new Splide('.destination-slider', {
                     type: 'fade',
-                    fixedHeight: 126,
-                    fixedWidth: 126,
+                    fixedHeight: 300,
+                    fixedWidth: '100%',
                     pagination: false,
-                    arrows: false,
+                    arrows: true,
                     cover: true,
-  type  : 'fade',
-  rewind: true,
-  autoplay: true,
-} );
+                    type: 'fade',
+                    rewind: true,
+                    autoplay: true,
+                });
 
-splide.mount();
+                splide.mount();
             });
-           
+
         </script>

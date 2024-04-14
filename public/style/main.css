@@ -14,7 +14,9 @@ body{
 .font_secondary{
     font-size: 18px;
 }
-
+.font-bold{
+    font-weight: 700;
+}
 /* slider main */
 .thumbnail-slider .splide__slide {
     border-radius: 12px;
@@ -53,4 +55,23 @@ body{
 }
 .thumbnail-slider{
     bottom: 12%;left: 50%; transform: translateX(-50%);
+}
+/* vitenam slider */
+.splide__arrow{
+    top: 85% !important;
+    transform: none !important;
+    left: unset !important;
+}
+.splide__arrow--prev {
+    right: 4em !important;
+    left: unset;
+}
+.boxshadow::before{
+    content: ' ';
+    box-shadow: inset 4px 31px 85px 9px #00000078;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(1.2);
+    background: #0000002e;
 }
