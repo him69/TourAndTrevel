@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+body{
+    font-family: "Merriweather", serif !important;
+}
+.siteLogo{
+    height: 100%;
+    width: 250px;
+}
+.font_primary{
+    font-size: 16px;
+    line-height: 1.6;
+}
+.font_secondary{
+    font-size: 18px;
+}
+
+/* slider main */
+.thumbnail-slider .splide__slide {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.thumbnail-slider .splide__slide.is-active {
+    transform: scale(1.2);
+    /* Adjust the scale factor as needed */
+    transition: all .5s ease-in-out;
+    filter: brightness(1);
+
+}
+
+.thumbnail-slider .splide__slide.is-active+.splide__slide {
+    margin-left: 20px;
+    transition: all .5s ease-in-out;
+    /* Increase the gap */
+}
+
+.thumbnail-slider .splide__slide:not(.is-active)+.splide__slide {
+    margin-left: 10px;
+    transition: all .5s ease-in-out;
+    /* Increase the gap */
+}
+
+.thumbnail-slider .splide__slide:not(.is-active) {
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    /* opacity: .5; */
+    filter: brightness(.5);
+}
+
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: 2px solid white !important;
+}
+.thumbnail-slider{
+    bottom: 12%;left: 50%; transform: translateX(-50%);
+}
