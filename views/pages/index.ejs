@@ -42,7 +42,7 @@
                             alt="Image 3"></li>
                     <li class="splide__slide"><img style="width: 600px; height: 300px;" src="<%= basePath %>img/sl4.jpg"
                             alt="Image 2"></li>
-                    <li class="splide__slide"><img style="height: inherit;" src="<%= basePath %>img/sl1.jpg"
+                    <li class="splide__slide"><img style="height: inherit;" src="<%= basePath %>img/sl5.jpg"
                             alt="Image 1">
                     </li>
                 </ul>
@@ -122,9 +122,66 @@
             </div>
         </div>
     </div>
-
+    <!-- call to action form -->
+    <div class="container my-4 section_padding">
+        <!-- Destination drop down selecter -->
+        <!-- from   date -->
+        <!-- select duration -->
+        <!-- budget -->
+        <!-- tour type -->
+        <div class="shadow-lg bg-white p-5">
+            <form method="post">
+                <div class="d-flex align-items-end">
+                    <div class="flex-grow-1 mx-2">
+                        <label for="" class="w-100 my-2">Select Destination</label>
+                        <div class=" p-3 bg-light text-muted">
+                            <select name="s" class="border-0 bg-transparent outline-0 w-100">
+                                <option value="#">vietnam</option>
+                                <option value="#">Maldiv</option>
+                                <option value="#">Thailand</option>
+                                <option value="#">Spain</option>
+                                <option value="#">Egypt</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 mx-2">
+                        <label for="" class="w-100 my-2">Date</label>
+                        <div class=" p-3 bg-light text-muted">
+                            <input type="text" id="datepicker" placeholder="DD / MM / YY" class="border-0 bg-transparent outline-0 w-100">
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 mx-2">
+                        <label for="" class="w-100 my-2">Duration</label>
+                        <div class=" p-3 bg-light text-muted">
+                            <input type="text" id="" class="border-0 bg-transparent outline-0 w-100"
+                                placeholder="7 Days">
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 mx-2">
+                        <label for="" class="w-100 my-2">Tour Type</label>
+                        <div class=" p-3 bg-light text-muted">
+                            <select name="s" class="border-0 bg-transparent outline-0 w-100">
+                                <option value="#">Adventure</option>
+                                <option value="#">Cultural</option>
+                                <option value="#">Luxury</option>
+                                <option value="#">Random People</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 mx-2">
+                            <button type="button" class="w-100 border-0 gradiant p-3 text-white">Inquire Now</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <%- include('../partials/footer') %>
+    
         <script>
+            flatpickr("#datepicker", {
+    dateFormat: "d-m-Y", // Set the date format to YYYY-MM-DD
+    // Other options...
+});
             document.addEventListener('DOMContentLoaded', function () {
                 var mainSlider = new Splide('.main-slider', {
                     // Your main slider options here
@@ -163,7 +220,7 @@
                 thumbnailSlider.on('click', function (slide) {
                     mainSlider.go(slide.index);
                 });
-                
+
                 var splide = new Splide('.destination-slider', {
                     type: 'fade',
                     fixedHeight: 300,

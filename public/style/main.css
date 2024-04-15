@@ -3,6 +3,9 @@
 body{
     font-family: "Merriweather", serif !important;
 }
+.gradiant{
+    background: linear-gradient(45deg, #57F1E7 , #0CB2A7);
+}
 .siteLogo{
     height: 100%;
     width: 250px;
@@ -74,4 +77,11 @@ body{
     position: absolute;
     transform: scale(1.2);
     background: #0000002e;
+}
+.section_padding{
+    padding: 4rem 0;
+}
+input:focus,select:focus,textarea:focus{
+    outline: none;
+    border: none;
 }
