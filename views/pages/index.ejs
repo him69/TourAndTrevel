@@ -1,5 +1,14 @@
 <%- include('../partials/head') %>
     <style>
+@keyframes oscillate {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.oscillate {
+    animation: oscillate 2s ease-in-out infinite; /* Adjust duration and timing as needed */
+}
 
     </style>
     <div id="sliderTop" class="vh-100">
@@ -54,7 +63,7 @@
     <!-- slider section-->
     <!-- vetnam section -->
     <div class="container my-4">
-        <div class="row">
+        <div class="row gx-4 justify-content-between">
             <div class="col-7">
                 <div>
                     <h2 class="fw-bold fs-1 ">Explore all tour of vietnam with us</h2>
@@ -99,8 +108,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 row">
-                <div class="col-6" style="transform: translateY(-41px);">
+            <div class="col-5 oscillate row">
+                <div class="col-6 " style="transform: translateY(-41px);">
                     <div class=" my-4 rounded-2 overflow-hidden shadow-lg" style="aspect-ratio: 1/1;width: 239px;">
                         <img class="w-100" style="height: inherit;height: 100%;" src="http://localhost:3000/img/sl1.jpg"
                             alt="Image 1">
