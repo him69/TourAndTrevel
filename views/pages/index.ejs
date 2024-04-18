@@ -18,6 +18,15 @@
             animation: oscillate 2s ease-in-out infinite;
             /* Adjust duration and timing as needed */
         }
+
+        .card_p:hover .tr {
+            transform: translateX(100%);
+            transition: all .3s ease-in-out;
+        }
+
+        .card_p .tr {
+            transition: all .3s ease-in-out;
+        }
     </style>
     <div id="sliderTop" class="vh-100">
         <div class="splide main-slider" style="height: inherit;">
@@ -208,32 +217,41 @@
                 <div class="col-7 h-100">
                     <div class="row h-100">
                         <div class="col-6 h-100">
-                            <div class="h-100 p-2 bg-white ren shadow-lg position-relative">
-                                <p class="position-absolute top-0 start-0 bg-white p-2 m-4"
-                                    style="letter-spacing: 1pt;">Thailand</p>
-                                <div class="position-absolute bottom-0 start-0 fs-4 p-2 m-4"
-                                    style="letter-spacing: 1pt;">
-                                    <p class="text-white">The Grand Palace</p>
+                            <div class="h-100 p-2 bg-white shadow-lg position-relative">
+                                <div class="hover h-100 position-relative">
+                                    <p class="position-absolute z-1 top-0 start-0 bg-white p-2 m-4"
+                                        style="letter-spacing: 1pt;">Thailand</p>
+                                    <div class="position-absolute z-1 bottom-0 start-0 fs-4 p-2 m-4"
+                                        style="letter-spacing: 1pt;">
+                                        <p class="text-white mb-0">The Grand Palace</p>
+                                        <span
+                                            class="badge rounded-pill bg-white border border-light v_sm_text text-black fw-lighter">Wonder/Nature</span>
+                                    </div>
+                                    <div class="overlay"></div>
+                                    <img class="h-100  w-100" style="width: 100%; object-fit:cover;"
+                                        src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg"
+                                        alt="Image 2">
                                 </div>
-                                <div class="overlay"></div>
-                                <img class="h-100  w-100" style="width: 100%; object-fit:cover;"
-                                    src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt="Image 2">
                                 <!-- the grand palace -->
                             </div>
 
                         </div>
                         <div class="col-6 h-100">
-                            <div class="h-100 p-2 bg-white shadow-lg ren position-relative">
-                                <p class="position-absolute top-0 start-0 bg-white p-2 m-4"
-                                    style="letter-spacing: 1pt;">Norway</p>
-                                <div class="position-absolute bottom-0 start-0 fs-4 p-2 m-4"
-                                    style="letter-spacing: 1pt;">
-                                    <p class="text-white">Trolltunga</p>
+                            <div class="h-100 p-2 bg-white shadow-lg position-relative">
+                                <div class="hover h-100 position-relative">
+                                    <p class="position-absolute z-1 top-0 start-0 bg-white p-2 m-4"
+                                        style="letter-spacing: 1pt;">Norway</p>
+                                    <div class="position-absolute z-1 bottom-0 start-0 fs-4 p-2 m-4"
+                                        style="letter-spacing: 1pt;">
+                                        <p class="text-white mb-0">Trolltunga</p>
+                                        <span
+                                            class="badge rounded-pill bg-white border border-light v_sm_text text-black fw-lighter">Adventure/Nature</span>
+                                    </div>
+                                    <div class="overlay"></div>
+                                    <img class="h-100 " style="width: 100%; object-fit:cover;"
+                                        src="http://localhost:3000/img/sebastien-goldberg-vgGjc_jHyfU-unsplash.jpg"
+                                        alt="Image 2">
                                 </div>
-                                <div class="overlay"></div>
-                                <img class="h-100 " style="width: 100%; object-fit:cover;"
-                                    src="http://localhost:3000/img/sebastien-goldberg-vgGjc_jHyfU-unsplash.jpg"
-                                    alt="Image 2">
                                 <!-- Trolltunga -->
                             </div>
                         </div>
@@ -241,37 +259,104 @@
                 </div>
                 <div class="col-5 h-100">
                     <div class="col-12  h-50 pb-2">
-                        <div class="shadow-lg ren p-2 bg-white position-relative h-100">
-                            <p class="position-absolute top-0 start-0 bg-white p-2 m-4" style="letter-spacing: 1pt;">
-                                Japan</p>
-                            <div class="position-absolute bottom-0 start-0 fs-4 p-2 m-4" style="letter-spacing: 1pt;">
-                                <p class="text-white">The Kumano Kodo</p>
+                        <div class="shadow-lg p-2 bg-white position-relative h-100">
+                            <div class="hover h-100 position-relative">
+                                <p class="position-absolute z-1 top-0 start-0 bg-white p-2 m-4"
+                                    style="letter-spacing: 1pt;">
+                                    Japan</p>
+                                <div class="position-absolute z-1 bottom-0 start-0 fs-4 p-2 m-4"
+                                    style="letter-spacing: 1pt;">
+                                    <p class="text-white mb-0">The Kumano Kodo</p>
+                                    <span
+                                        class="badge rounded-pill bg-white border border-light v_sm_text text-black fw-lighter">Adventure/Cultural</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <img class="h-100" style="width: 100%;object-fit:cover;aspect-ratio: 2/1;"
+                                    src="http://localhost:3000/img/kumano-kodo-1030462_1280.jpg" alt="Image 2">
                             </div>
-                            <div class="overlay"></div>
-                            <img class="h-100" style="width: 100%;object-fit:cover;aspect-ratio: 2/1;"
-                                src="http://localhost:3000/img/kumano-kodo-1030462_1280.jpg" alt="Image 2">
                             <!-- The Kumano Kodo -->
                         </div>
                     </div>
 
                     <div class="col-12 h-50 pt-3">
-                        <div class="shadow-lg ren p-2 bg-white position-relative h-100">
-                            <p class="position-absolute top-0 start-0 bg-white p-2 m-4" style="letter-spacing: 1pt;">
-                                Singapore</p>
-                            <div class="position-absolute bottom-0 start-0 fs-4 p-2 m-4" style="letter-spacing: 1pt;">
-                                <p class="text-white">Gardens by the Bay</p>
+                        <div class="shadow-lg bg-white p-2 h-100">
+                            <div class="hover h-100 position-relative">
+                                <p class="position-absolute z-1 top-0 start-0 bg-white p-2 m-4"
+                                    style="letter-spacing: 1pt;">
+                                    Singapore</p>
+                                <div class="position-absolute bottom-0 z-1 start-0 fs-4 p-2 m-4"
+                                    style="letter-spacing: 1pt;">
+                                    <p class="text-white mb-0">Gardens by the Bay</p>
+                                    <span
+                                        class="badge rounded-pill bg-white border border-light v_sm_text text-black fw-lighter">Wonder/Nature</span>
+                                </div>
+
+                                <div class="overlay"></div>
+                                <img class="h-100" style="width: 100%;object-fit:cover;aspect-ratio: 2/1;"
+                                    src="http://localhost:3000/img/victor-yi56XJsYY0Q-unsplash.jpg" alt="Image 2">
                             </div>
-                            <div class="overlay"></div>
-                            <img class="h-100" style="width: 100%;object-fit:cover;aspect-ratio: 2/1;"
-                                src="http://localhost:3000/img/victor-yi56XJsYY0Q-unsplash.jpg" alt="Image 2">
                             <!-- Gardens by the Bay -->
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="col-12 d-flex justify-content-center py-3 my-5  ">
+            <div class="col-12 d-flex justify-content-center py-3 mt-5  ">
                 <button type="button" class="border-0 gradiant p-3 text-white ">Explore Destinations</button>
+            </div>
+        </div>
+    </div>
+    <!-- pacages -->
+    <div class="container my-4 ">
+        <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">PACKAGES,You will fall in love with</h2>
+        <div class="d-flex justify-content-between">
+            <div style="width: 263px;" class="shadow-sm card_p">
+                <div class="position-relative" style="height: 320px; ">
+                    <img class="h-100 w-100" src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
+                        style="object-fit: cover;">
+                    <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
+                        <h6 class="mb-0">Adventure Tours</h6>
+                    </div>
+                    <button type="button" class="border-0 gradiant p-2 text-white position-absolute bottom-0 m-3 end-0">book Now</button>
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white">
+
+                        <p class="fw-bold mb-0">Places you can vsit</p>
+                        <div class="my-2">
+                            <span
+                                class="badge rounded-pill bg-white border v_sm_text text-black fw-lighter">malashia</span>
+                            <span
+                                class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">rukteriaman</span>
+                            <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
+                                ginath</span>
+                            <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
+                                ginath</span>
+                        </div>
+                        <p style="
+        font-size: 12px;
+    " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
+                            makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
+                        </p>
+                        <div class="row gx-0 align-items-center mt-2">
+                            <div class="col-4 gradiant p-1">
+                                <p style="
+        font-size: 14px;
+    " class="text-center mb-0">people: 4-8</p>
+                            </div>
+                            <div class="col-4 gradiant p-1">
+                                <p style="
+        font-size: 14px;
+    " class="text-center mb-0 line position-relative">7D/6N</p>
+                            </div>
+                            <div class="col-4 bg-white">
+                                <p style="
+        font-size: 14px;
+    " class="text-center mb-0">Book now
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -339,16 +424,58 @@
 
 
             // Select all elements with the class 'shadow-lg'
-          
+            const getHoverDirection = function (event) {
+                var directions = ['top', 'right', 'bottom', 'left'];
+                var item = event.currentTarget;
 
+                // Width and height of current item
+                var w = item.offsetWidth;
+                var h = item.offsetHeight;
 
+                // Calculate the x/y value of the pointer entering/exiting, relative to the center of the item.
+                // Scale (sort of normalize) the coordinate on smallest side to the scale of the longest.
+                var x = (event.clientX - item.getBoundingClientRect().left - (w / 2)) * (w > h ? (h / w) : 1);
+                var y = (event.clientY - item.getBoundingClientRect().top - (h / 2)) * (h > w ? (w / h) : 1);
 
+                // Calculate the angle to the center the pointer entered/exited
+                // and convert to clockwise format (top/right/bottom/left = 0/1/2/3).
+                var d = Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
 
+                return directions[d];
+            };
 
+            document.addEventListener('DOMContentLoaded', function (event) {
+                // Loop over items (in a IE11 compatible way).
+                var items = document.getElementsByClassName('hover');
+                for (var i = 0; i < items.length; i++) {
 
+                    // Loop over the registered event types.
+                    ['mouseenter', 'mouseleave'].forEach(function (eventname) {
+                        items[i].addEventListener(eventname, function (event) {
 
+                            // Retrieve the direction of the enter/leave event.
+                            var dir = getHoverDirection(event);
 
+                            // Reset classes.
+                            // event.currentTarget.className = 'item hover';
+                            // > If support for IE11 is not needed.
+                            // event.currentTarget.classList.remove('mouseenter', 'mouseleave', 'top', 'right', 'bottom', 'left');
+                            // > If support for IE11 is needed.
+                            event.currentTarget.classList.remove('mouseenter');
+                            event.currentTarget.classList.remove('mouseleave');
+                            event.currentTarget.classList.remove('top');
+                            event.currentTarget.classList.remove('right');
+                            event.currentTarget.classList.remove('bottom');
+                            event.currentTarget.classList.remove('left');
 
+                            // Add the event and direction classes.
+                            // > If support for IE11 is not needed.
+                            // event.currentTarget.classList.add(event.type, dir);
+                            // > If support for IE11 is needed.
+                            event.currentTarget.className += ' ' + event.type + ' ' + dir;
 
-
+                        }, false);
+                    });
+                }
+            });
         </script>
