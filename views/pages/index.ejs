@@ -22,10 +22,28 @@
         .card_p:hover .tr {
             transform: translateX(100%);
             transition: all .3s ease-in-out;
+            z-index: 9;
+        }
+
+        .packges_box .card_p:last-child:hover .tr {
+            transform: translateX(-100%);
+            transition: all .3s ease-in-out;
+            z-index: 9;
         }
 
         .card_p .tr {
             transition: all .3s ease-in-out;
+            z-index: 1;
+        }
+
+        .packges_info {
+            position: absolute;
+            width: calc(100% - 1.5rem);
+            left: 0;
+            bottom: 16px;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
         }
     </style>
     <div id="sliderTop" class="vh-100">
@@ -308,17 +326,37 @@
     </div>
     <!-- pacages -->
     <div class="container my-4 ">
-        <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">PACKAGES,You will fall in love with</h2>
-        <div class="d-flex justify-content-between">
-            <div style="width: 263px;" class="shadow-sm card_p">
+        <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">PACKAGES, <span class="fs-4">you will fall in
+                love with</span> </h2>
+        <div class="d-flex justify-content-between packges_box">
+            <!-- one -->
+            <div style="width: 265px;" class="shadow-sm card_p">
                 <div class="position-relative" style="height: 320px; ">
                     <img class="h-100 w-100" src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
                     <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
                         <h6 class="mb-0">Adventure Tours</h6>
                     </div>
-                    <button type="button" class="border-0 gradiant p-2 text-white position-absolute bottom-0 m-3 end-0">book Now</button>
-                    <div class="info tr p-3 position-absolute bottom-0 bg-white">
+
+                    <div class="row gx-0 align-items-center packges_info" style="">
+                        <div class="col-4 gradiant p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0">people: 4-8</p>
+                        </div>
+                        <div class="col-4 gradiant p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0 line position-relative">7D/6N</p>
+                        </div>
+                        <div class="col-4 bg-white p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0">Book now
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white border pb-5">
 
                         <p class="fw-bold mb-0">Places you can vsit</p>
                         <div class="my-2">
@@ -336,29 +374,167 @@
     " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
                             makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
                         </p>
-                        <div class="row gx-0 align-items-center mt-2">
-                            <div class="col-4 gradiant p-1">
-                                <p style="
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- Two -->
+            <div style="width: 265px;" class="shadow-sm card_p">
+                <div class="position-relative" style="height: 320px; ">
+                    <img class="h-100 w-100" src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
+                        style="object-fit: cover;">
+                    <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
+                        <h6 class="mb-0">Adventure Tours</h6>
+                    </div>
+
+                    <div class="row gx-0 align-items-center packges_info">
+                        <div class="col-4 gradiant p-1">
+                            <p style="
         font-size: 14px;
     " class="text-center mb-0">people: 4-8</p>
-                            </div>
-                            <div class="col-4 gradiant p-1">
-                                <p style="
+                        </div>
+                        <div class="col-4 gradiant p-1">
+                            <p style="
         font-size: 14px;
     " class="text-center mb-0 line position-relative">7D/6N</p>
-                            </div>
-                            <div class="col-4 bg-white">
-                                <p style="
+                        </div>
+                        <div class="col-4 bg-white p-1">
+                            <p style="
         font-size: 14px;
     " class="text-center mb-0">Book now
-                                </p>
-                            </div>
+                            </p>
                         </div>
+                    </div>
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white border pb-5">
+
+                        <p class="fw-bold mb-0">Places you can vsit</p>
+                        <div class="my-2">
+                            <span
+                                class="badge rounded-pill bg-white border v_sm_text text-black fw-lighter">malashia</span>
+                            <span
+                                class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">rukteriaman</span>
+                            <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
+                                ginath</span>
+                            <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
+                                ginath</span>
+                        </div>
+                        <p style="
+        font-size: 12px;
+    " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
+                            makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- three -->
+            <div style="width: 265px;" class="shadow-sm card_p">
+                <div class="position-relative" style="height: 320px; ">
+                    <img class="h-100 w-100" src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
+                        style="object-fit: cover;">
+                    <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
+                        <h6 class="mb-0">Adventure Tours</h6>
+                    </div>
+
+                    <div class="row gx-0 align-items-center packges_info">
+                        <div class="col-4 gradiant p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0">people: 4-8</p>
+                        </div>
+                        <div class="col-4 gradiant p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0 line position-relative">7D/6N</p>
+                        </div>
+                        <div class="col-4 bg-white p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0">Book now
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white border pb-5">
+
+                        <p class="fw-bold mb-0">Places you can vsit</p>
+                        <div class="my-2">
+                            <span
+                                class="badge rounded-pill bg-white border v_sm_text text-black fw-lighter">malashia</span>
+                            <span
+                                class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">rukteriaman</span>
+                            <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
+                                ginath</span>
+                            <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
+                                ginath</span>
+                        </div>
+                        <p style="
+        font-size: 12px;
+    " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
+                            makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- four -->
+            <div style="width: 265px;" class="shadow-sm card_p">
+                <div class="position-relative" style="height: 320px; ">
+                    <img class="h-100 w-100" src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
+                        style="object-fit: cover;">
+                    <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
+                        <h6 class="mb-0">Adventure Tours</h6>
+                    </div>
+
+                    <div class="row gx-0 align-items-center packges_info">
+                        <div class="col-4 gradiant p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0">people: 4-8</p>
+                        </div>
+                        <div class="col-4 gradiant p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0 line position-relative">7D/6N</p>
+                        </div>
+                        <div class="col-4 bg-white p-1">
+                            <p style="
+        font-size: 14px;
+    " class="text-center mb-0">Book now
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white border pb-5">
+
+                        <p class="fw-bold mb-0">Places you can vsit</p>
+                        <div class="my-2">
+                            <span
+                                class="badge rounded-pill bg-white border v_sm_text text-black fw-lighter">malashia</span>
+                            <span
+                                class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">rukteriaman</span>
+                            <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
+                                ginath</span>
+                            <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
+                                ginath</span>
+                        </div>
+                        <p style="
+        font-size: 12px;
+    " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
+                            makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
+                        </p>
+
                     </div>
                 </div>
 
             </div>
         </div>
+    </div>
+    <!-- offers you wish for -->
+    <div class="container my-4">
+        <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">OFFERS, <span class="fs-4">you wish for</span> </h2>
+        <div class="offer_container"></div>
     </div>
     <%- include('../partials/footer') %>
 
