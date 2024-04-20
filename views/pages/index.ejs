@@ -21,19 +21,25 @@
 
         .card_p:hover .tr {
             transform: translateX(100%);
-            transition: all .3s ease-in-out;
+            transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             z-index: 9;
+            border-color: #dee2e6;
+            /* border: 1px solid; */
         }
 
         .packges_box .card_p:last-child:hover .tr {
             transform: translateX(-100%);
-            transition: all .3s ease-in-out;
+            transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             z-index: 9;
+            border-color: #dee2e6;
+            /* border: 1px solid; */
         }
 
         .card_p .tr {
-            transition: all .3s ease-in-out;
+            transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             z-index: 1;
+            border: 1px solid transparent;
+            /* border: 1px solid; */
         }
 
         .packges_info {
@@ -44,6 +50,36 @@
             z-index: 2;
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        .bagde-flag-wrap {
+            position: absolute;
+            top: 20px;
+            left: -12px;
+        }
+
+        .bagde-flag-wrap::before {
+            content: "";
+            position: absolute;
+            top: 35px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 12px 12px 0;
+            border-color: transparent #0CB2A7 transparent transparent;
+        }
+
+        .bagde-flag {
+            text-transform: capitalize;
+            color: #ffffff;
+            background: #0CB2A7;
+            letter-spacing: 0;
+            font-size: 14px;
+            line-height: 15px;
+            font-weight: 600;
+            padding: 10px 15px;
+            display: block;
+            text-decoration: none;
         }
     </style>
     <div id="sliderTop" class="vh-100">
@@ -325,7 +361,7 @@
         </div>
     </div>
     <!-- pacages -->
-    <div class="container my-4 ">
+    <div class="container my-4 py-5">
         <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">PACKAGES, <span class="fs-4">you will fall in
                 love with</span> </h2>
         <div class="d-flex justify-content-between packges_box">
@@ -356,7 +392,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="info tr p-3 position-absolute bottom-0 bg-white border pb-5">
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white pb-5">
 
                         <p class="fw-bold mb-0">Places you can vsit</p>
                         <div class="my-2">
@@ -406,7 +442,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="info tr p-3 position-absolute bottom-0 bg-white border pb-5">
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white pb-5">
 
                         <p class="fw-bold mb-0">Places you can vsit</p>
                         <div class="my-2">
@@ -456,7 +492,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="info tr p-3 position-absolute bottom-0 bg-white border pb-5">
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white pb-5">
 
                         <p class="fw-bold mb-0">Places you can vsit</p>
                         <div class="my-2">
@@ -506,7 +542,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="info tr p-3 position-absolute bottom-0 bg-white border pb-5">
+                    <div class="info tr p-3 position-absolute bottom-0 bg-white pb-5">
 
                         <p class="fw-bold mb-0">Places you can vsit</p>
                         <div class="my-2">
@@ -532,9 +568,74 @@
         </div>
     </div>
     <!-- offers you wish for -->
-    <div class="container my-4">
-        <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">OFFERS, <span class="fs-4">you wish for</span> </h2>
-        <div class="offer_container"></div>
+    <div class="container my-4 py-5">
+        <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">OFFERS, <span class="fs-4">you wish for</span>
+        </h2>
+        <div class="offer_container row">
+            <div class="col-6" style="height: 285px;">
+                <div class="d-flex h-100">
+                    <div class="w-50 position-relative h-100">
+                        <img src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
+                            class="w-100 h-100" style="object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 m-3 bg-white p-2">
+                            <h6 class="mb-0">New Zealand</h6>
+                        </div>
+                        <div class="bagde-flag-wrap">
+                            <p class="bagde-flag">20% OFF</p>
+                        </div>
+                    </div>
+                    <div class="bg-white w-50 h-100 p-3">
+                        <p class="fw-bold">Experience the Ultimate Mountain Adventure </p>
+                        <p style="
+    color: #FFA500;
+" class="badge rounded-pill bg-white border v_sm_text border-warning mb-0">ONLY 15DAYS LEFT</p>
+                        <p class="text-muted mt-1" style="
+    font-size: 12px;    height: calc(285px - 156px);
+">Embark on an unforgettable trekking journey to our secluded mountain campsite. Immerse
+                            yourself in the beauty of nature as you trek through lush forests, cross babbling streams,
+                            and ascend to breathtaking vistas. Spend the night under the stars at our exclusive</p>
+                            <div class=" row mx-0">
+                                <button style="font-size: 14px;" class="text-center mb-0 p-1 px-2 gradiant text-white border-0 col-6" >Book now
+                                </button>
+                                    <button style="font-size: 14px;border: 1px solid #0CB2A7;" class="text-center mb-0 bg-white p-1 px-2 col-6" >Promo Code
+                                </button>
+                            </div> 
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" style="height: 285px;">
+                <div class="d-flex h-100">
+                    <div class="w-50 position-relative h-100">
+                        <img src="http://localhost:3000/img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
+                            class="w-100 h-100" style="object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 m-3 bg-white p-2">
+                            <h6 class="mb-0">New Zealand</h6>
+                        </div>
+                        <div class="bagde-flag-wrap">
+                            <p class="bagde-flag">20% OFF</p>
+                        </div>
+                    </div>
+                    <div class="bg-white w-50 h-100 p-3">
+                        <p class="fw-bold">Experience the Ultimate Mountain Adventure </p>
+                        <p style="
+    color: #FFA500;
+" class="badge rounded-pill bg-white border v_sm_text border-warning mb-0">LIMITED TIME OFFER</p>
+                        <p class="text-muted mt-1" style="
+    font-size: 12px;     height: calc(285px - 156px);
+">Embark on an unforgettable trekking journey to our secluded mountain campsite. Immerse
+                            yourself in the beauty of nature as you trek through lush forests, cross babbling streams,
+                            and ascend to breathtaking vistas.</p> <div class=" row mx-0">
+                                <button style="font-size: 14px;" class="text-center mb-0 p-1 px-2 gradiant text-white border-0 col-6" >Book now
+                                </button>
+                                    <button style="font-size: 14px;border: 1px solid #0CB2A7;" class="text-center mb-0 bg-white p-1 px-2 col-6" >Promo Code
+                                        <!-- on this a pop up will open and there is a gamil input and address input and a button {check likha hoga )} -->
+                                </button>
+                            </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <%- include('../partials/footer') %>
 
