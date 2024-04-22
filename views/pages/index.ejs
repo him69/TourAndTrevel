@@ -81,6 +81,38 @@
             display: block;
             text-decoration: none;
         }
+
+        img.wide,
+        img.tall {
+            max-width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .gallery-grid img {
+            border-radius: 10px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(77px, 1fr));
+            gap: 7px;
+            grid-auto-rows: 111px;
+            grid-auto-flow: dense;
+            align-items: stretch;
+            justify-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wide {
+            grid-column: span 1;
+        }
+
+        .tall {
+            grid-row: span 2;
+        }
+        
     </style>
     <div id="sliderTop" class="vh-100">
         <div class="splide main-slider" style="height: inherit;">
@@ -376,19 +408,13 @@
 
                     <div class="row gx-0 align-items-center packges_info" style="">
                         <div class="col-4 gradiant p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0">people: 4-8</p>
+                            <p style="font-size: 14px;" class="text-center mb-0">people: 4-8</p>
                         </div>
                         <div class="col-4 gradiant p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0 line position-relative">7D/6N</p>
+                            <p style="font-size: 14px;" class="text-center mb-0 line position-relative">7D/6N</p>
                         </div>
                         <div class="col-4 bg-white p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0">Book now
+                            <p style="font-size: 14px; " class="text-center mb-0">Book now
                             </p>
                         </div>
                     </div>
@@ -405,9 +431,8 @@
                             <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
                                 ginath</span>
                         </div>
-                        <p style="
-        font-size: 12px;
-    " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
+                        <p style="font-size: 12px;" class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat
+                            mikroktigt ifall poling såning. Dengar kagen
                             makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
                         </p>
 
@@ -426,19 +451,13 @@
 
                     <div class="row gx-0 align-items-center packges_info">
                         <div class="col-4 gradiant p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0">people: 4-8</p>
+                            <p style="font-size: 14px;" class="text-center mb-0">people: 4-8</p>
                         </div>
                         <div class="col-4 gradiant p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0 line position-relative">7D/6N</p>
+                            <p style="font-size: 14px;" class="text-center mb-0 line position-relative">7D/6N</p>
                         </div>
                         <div class="col-4 bg-white p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0">Book now
+                            <p style="font-size: 14px; " class="text-center mb-0">Book now
                             </p>
                         </div>
                     </div>
@@ -455,9 +474,8 @@
                             <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
                                 ginath</span>
                         </div>
-                        <p style="
-        font-size: 12px;
-    " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
+                        <p style="font-size: 12px;" class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat
+                            mikroktigt ifall poling såning. Dengar kagen
                             makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
                         </p>
 
@@ -476,19 +494,13 @@
 
                     <div class="row gx-0 align-items-center packges_info">
                         <div class="col-4 gradiant p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0">people: 4-8</p>
+                            <p style="font-size: 14px;" class="text-center mb-0">people: 4-8</p>
                         </div>
                         <div class="col-4 gradiant p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0 line position-relative">7D/6N</p>
+                            <p style="font-size: 14px;" class="text-center mb-0 line position-relative">7D/6N</p>
                         </div>
                         <div class="col-4 bg-white p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0">Book now
+                            <p style="font-size: 14px;" class="text-center mb-0">Book now
                             </p>
                         </div>
                     </div>
@@ -505,9 +517,8 @@
                             <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
                                 ginath</span>
                         </div>
-                        <p style="
-        font-size: 12px;
-    " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
+                        <p style="font-size: 12px;" class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat
+                            mikroktigt ifall poling såning. Dengar kagen
                             makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
                         </p>
 
@@ -526,19 +537,13 @@
 
                     <div class="row gx-0 align-items-center packges_info">
                         <div class="col-4 gradiant p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0">people: 4-8</p>
+                            <p style="font-size: 14px;" class="text-center mb-0">people: 4-8</p>
                         </div>
                         <div class="col-4 gradiant p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0 line position-relative">7D/6N</p>
+                            <p style="font-size: 14px;" class="text-center mb-0 line position-relative">7D/6N</p>
                         </div>
                         <div class="col-4 bg-white p-1">
-                            <p style="
-        font-size: 14px;
-    " class="text-center mb-0">Book now
+                            <p style="font-size: 14px;" class="text-center mb-0">Book now
                             </p>
                         </div>
                     </div>
@@ -555,9 +560,8 @@
                             <span class="badge rounded-pill bg-white border  v_sm_text text-black fw-lighter">sunbrubb
                                 ginath</span>
                         </div>
-                        <p style="
-        font-size: 12px;
-    " class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat mikroktigt ifall poling såning. Dengar kagen
+                        <p style="font-size: 12px;" class="text-muted">Lörem ipsum dengen nilig därför att jilide, besat
+                            mikroktigt ifall poling såning. Dengar kagen
                             makrobel såsom mikrol oktigt rede. Mism superspridare fapuspegt. Kromalogod rånynde sobektig
                         </p>
 
@@ -586,21 +590,22 @@
                     </div>
                     <div class="bg-white w-50 h-100 p-3">
                         <p class="fw-bold">Experience the Ultimate Mountain Adventure </p>
-                        <p style="
-    color: #FFA500;
-" class="badge rounded-pill bg-white border v_sm_text border-warning mb-0">ONLY 15DAYS LEFT</p>
-                        <p class="text-muted mt-1" style="
-    font-size: 12px;    height: calc(285px - 156px);
-">Embark on an unforgettable trekking journey to our secluded mountain campsite. Immerse
+                        <p style="color: #FFA500;"
+                            class="badge rounded-pill bg-white border v_sm_text border-warning mb-0">ONLY 15DAYS LEFT
+                        </p>
+                        <p class="text-muted mt-1" style="font-size: 12px;    height: calc(285px - 156px)">Embark on an
+                            unforgettable trekking journey to our secluded mountain campsite. Immerse
                             yourself in the beauty of nature as you trek through lush forests, cross babbling streams,
                             and ascend to breathtaking vistas. Spend the night under the stars at our exclusive</p>
-                            <div class=" row mx-0">
-                                <button style="font-size: 14px;" class="text-center mb-0 p-1 px-2 gradiant text-white border-0 col-6" >Book now
-                                </button>
-                                    <button style="font-size: 14px;border: 1px solid #0CB2A7;" class="text-center mb-0 bg-white p-1 px-2 col-6" >Promo Code
-                                </button>
-                            </div> 
-                            
+                        <div class=" row mx-0">
+                            <button style="font-size: 14px;"
+                                class="text-center mb-0 p-1 px-2 gradiant text-white border-0 col-6">Book now
+                            </button>
+                            <button style="font-size: 14px;border: 1px solid #0CB2A7;"
+                                class="text-center mb-0 bg-white p-1 px-2 col-6">Promo Code
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -618,21 +623,129 @@
                     </div>
                     <div class="bg-white w-50 h-100 p-3">
                         <p class="fw-bold">Experience the Ultimate Mountain Adventure </p>
-                        <p style="
-    color: #FFA500;
-" class="badge rounded-pill bg-white border v_sm_text border-warning mb-0">LIMITED TIME OFFER</p>
-                        <p class="text-muted mt-1" style="
-    font-size: 12px;     height: calc(285px - 156px);
-">Embark on an unforgettable trekking journey to our secluded mountain campsite. Immerse
+                        <p style=" color: #FFA500;"
+                            class="badge rounded-pill bg-white border v_sm_text border-warning mb-0">LIMITED TIME OFFER
+                        </p>
+                        <p class="text-muted mt-1" style=" font-size: 12px;     height: calc(285px - 156px);">Embark on
+                            an unforgettable trekking journey to our secluded
+                            mountain campsite. Immerse
                             yourself in the beauty of nature as you trek through lush forests, cross babbling streams,
-                            and ascend to breathtaking vistas.</p> <div class=" row mx-0">
-                                <button style="font-size: 14px;" class="text-center mb-0 p-1 px-2 gradiant text-white border-0 col-6" >Book now
-                                </button>
-                                    <button style="font-size: 14px;border: 1px solid #0CB2A7;" class="text-center mb-0 bg-white p-1 px-2 col-6" >Promo Code
-                                        <!-- on this a pop up will open and there is a gamil input and address input and a button {check likha hoga )} -->
-                                </button>
-                            </div> 
+                            and ascend to breathtaking vistas.</p>
+                        <div class=" row mx-0">
+                            <button style="font-size: 14px;"
+                                class="text-center mb-0 p-1 px-2 gradiant text-white border-0 col-6">Book now
+                            </button>
+                            <button style="font-size: 14px;border: 1px solid #0CB2A7;"
+                                class="text-center mb-0 bg-white p-1 px-2 col-6">Promo Code
+                                <!-- on this a pop up will open and there is a gamil input and address input and a button {check likha hoga )} -->
+                            </button>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- make a why choose us section -->
+    <!-- book now -->
+    <div class="container my-4 py-5">
+        <div class="row justify-content-between">
+            <div class="col-6 row">
+                <h2 class=" fs-1 py-3 mb-4" style="font-weight: 900;"> GIVE US A CALL
+                </h2>
+                <div class="gallery">
+                    <div class="gallery-grid">
+                        <img class="wide"
+                            src="https://images.unsplash.com/photo-1493807394496-2d6d8a70dc5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400"
+                            alt="">
+                        <img class="tall"
+                            src="https://images.unsplash.com/photo-1568996550942-bff3caa44949?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&&w=400&h=800"
+                            alt="">
+                        <img class="wide"
+                            src="https://images.unsplash.com/photo-1484942835385-dcb3923c11e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400"
+                            alt="">
+                        <img class="wide"
+                            src="https://images.unsplash.com/photo-1428364685224-aa2d596d2cf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400"
+                            alt="">
+                        <img class="tall"
+                            src="https://images.unsplash.com/photo-1586522471252-68f4b108ff2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=800"
+                            alt="">
+                        <img class="wide"
+                            src="https://images.unsplash.com/photo-1450791985525-55b3bc4aae7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400"
+                            alt="">
+                        <img class="tall"
+                            src="https://images.unsplash.com/photo-1557478551-8d6953a259eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400"
+                            alt="">
+                        <img class="tall"
+                            src="https://images.unsplash.com/photo-1587239101950-094ae8291a6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=800"
+                            alt="">
+                        <img class="wide"
+                            src="https://images.unsplash.com/photo-1464777649758-8747547e793f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&w=400&h=400"
+                            alt="">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6 p-3">
+                <form method="post">
+                    <input type="text" name="" class="border px-2 py-3 my-3 w-100" placeholder="Name">
+                    <input type="email" name="" class="border px-2 py-3 my-3 w-100" placeholder="Email">
+                    <input type="number" name="" class="border px-2 py-3 my-3 w-100" placeholder="Phone Number">
+                    <textarea type="text" name="" class="border px-2 py-3 my-3 w-100"
+                        placeholder="Tour interests or questions!"></textarea>
+                    <button type="button" class="border-0 gradiant p-3 text-white float-end">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- testimonial -->
+    <div class="test_bg-img">
+        <div class="container my-5 py-5 h-100">
+            <div class="row h-100">
+                <div class="col-6 h-100 d-flex align-items-center justfy-content-center text-white">
+                    <div class="">
+                        <h2 class=" fs-1 py-3 mb-4" style="font-weight: 900;"> OUR <br> HAPPY <br> CLIENTS
+                        </h2>
+                        <p class="text-white-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque labore
+                            laborum similique pariatur totam alias odit laboriosam, qui nobis blanditiis maxime possimus
+                            autem distinctio perspiciatis beatae consectetur eveniet? Inventore, dolores quidem iste
+                            fuga dignissimos sed ea laudantium quod! Asperiores, deleniti!</p>
+                    </div>
+                </div>
+                <div class="col-6 h-100 d-flex align-items-center justfy-content-center text-white">
+
+                    <div class="splide testimonial">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="text-center p-3">
+                                        <p>Traveling with [Company Name] was a life-changing experience! From breathtaking
+                                            views to seamless organization, every moment was unforgettable. I can't wait to
+                                            embark on my next adventure with them.</p>
+                                        <span class="float-end fw-bold">By Emma Smith</span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="text-center p-3">
+                                        <p>Traveling with [Company Name] was an absolute joy! The guides were knowledgeable,
+                                            the accommodations were superb, and the memories made will last a lifetime.</p>
+                                        <span class="float-end fw-bold">By Alexandra Lee</span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="text-center p-3">
+                                        <p>I cannot recommend [Company Name] enough! From start to finish, every detail was
+                                            taken care of, allowing me to relax and fully immerse myself in the adventure.
+                                        </p>
+                                        <span class="float-end fw-bold">By Emily Johnson</span>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -696,6 +809,16 @@
                 });
 
                 splide.mount();
+                new Splide('.testimonial', {
+                    type: 'slide',
+                    perPage: 1, // Number of slides to show at once
+                    autoplay: true, // Enable autoplay
+                    pauseOnHover: false, // Disable pausing on hover
+                    interval: 3000, // Autoplay interval in milliseconds
+                    type: 'fade',
+                    arrows: false, // Hide navigation arrows
+                    pagination: false, // Hide pagination
+                }).mount();
             });
             // overlay animation
 

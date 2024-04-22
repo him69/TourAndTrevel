@@ -203,3 +203,12 @@ input:focus,select:focus,textarea:focus{
     position: absolute;
     left: 0;
 }
+/* testimonial */
+.test_bg-img{
+  background: linear-gradient(45deg, #0000006b, #0000006b), url(http://localhost:3000/img/kal-visuals-aK4iPNYipnU-unsplash.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 500px;
+/* fillter:brightness(.5); */
+}
