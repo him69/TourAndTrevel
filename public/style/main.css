@@ -24,6 +24,11 @@ p{
     color:  #0CB2A7;
     /* color: white; */
 }
+.border-main{
+    /* background: linear-gradient(45deg, #57F1E7 , #0CB2A7); */
+    border: 1px solid #0CB2A7;
+    /* color: white; */
+}
 .siteLogo{
     height: 100%;
     width: 250px;
