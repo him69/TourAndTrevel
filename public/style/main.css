@@ -19,6 +19,11 @@ p{
     background:  #0CB2A7;
     color: white;
 }
+.gradiant-text{
+    /* background: linear-gradient(45deg, #57F1E7 , #0CB2A7); */
+    color:  #0CB2A7;
+    /* color: white; */
+}
 .siteLogo{
     height: 100%;
     width: 250px;
@@ -211,4 +216,15 @@ background-repeat: no-repeat;
 background-position: center;
 height: 500px;
 /* fillter:brightness(.5); */
+}
+/* navbar */
+.linksBox:after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #eee;
+  position: absolute;
+}
+.linksBox {
+  position: relative;
 }
