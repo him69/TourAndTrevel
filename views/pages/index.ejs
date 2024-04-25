@@ -112,57 +112,323 @@
         .tall {
             grid-row: span 2;
         }
-        
+
+        /* ocilate box */
+        .dfgi {
+            aspect-ratio: 1 / 1;
+            width: 239px;
+        }
+
+        .rfaf {
+            transform: translateY(-41px);
+        }
+
+        .nmkmfgy {
+            transform: translateY(0px);
+        }
+
+        /* main slider */
+        .main-slider .slide_content {
+            padding: 120px 0 120px 120px;
+        }
+
+        .main-slider .slide_content p {
+            width: 50%;
+        }
+
+        .main-slider,
+        .main-slider .splide__track,
+        .main-slider .splide__list,
+        .main-slider .splide__slide {
+            height: inherit !important;
+        }
+
+        /* top motch */
+        .alskndf {
+            height: 36rem;
+        }
+
+        .cus_h {
+            height: 100%;
+        }
+
+        .alamk {
+            padding-top: 0;
+        }
+        .afjqaf{
+            height: 100%;
+        }
+
+        /* hoverable card */
+        .packges_box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card_p {
+            width: 265px;
+            margin-bottom: 20px;
+        }
+
+        /* why choose us */
+        .metgi {
+            transform: rotate(-45deg) translate(-8%, -79%);
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform-origin: center center;
+        }
+
+        .vsxgfgs {
+            width: 307px;
+            aspect-ratio: 1/1;
+            transform: rotate(45deg);
+            transform-origin: center center;
+        }
+
+        .metgi i {
+            font-size: 28px;
+        }
+
+        .sfadv {
+            padding: 4rem 0;
+        }
+
+        /* happy cient */
+        .bhehyrt {
+            height: 100%;
+        }
+
+        /* media */
+        @media only screen and (max-width: 1400px) {
+            body {
+                /* background-color: black; */
+            }
+
+            .dfgi {
+                aspect-ratio: 1 / 1;
+                width: 195px;
+            }
+
+            .rfaf {
+                transform: translateY(3px);
+            }
+
+            .nmkmfgy {
+                transform: translateY(71px);
+            }
+
+            .main-slider .slide_content {
+                padding: 120px 0 120px 76px;
+            }
+
+            .alamk {
+                padding-top: 3rem;
+            }
+
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .alskndf {
+                height: 82rem;
+            }
+
+            .cus_h {
+                height: 50%;
+            }
+
+            .card_p:hover .tr {
+                transform: translateX(0);
+                opacity: 0;
+                transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                z-index: 9;
+                border-color: #dee2e6;
+                /* border: 1px solid; */
+            }
+
+            .packges_box .card_p:last-child:hover .tr {
+                transform: translateX(0%);
+                opacity: 0;
+                transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                z-index: 9;
+                border-color: #dee2e6;
+                /* border: 1px solid; */
+            }
+
+            .metgi {
+                transform: rotate(-45deg) translate(4%, -66%);
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .alskndf {
+                height: 82rem;
+            }
+
+            .cus_h {
+                height: 50%;
+            }
+
+            .packges_box {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .card_p {
+                /* margin-bottom: 20px;  */
+                width: 265px;
+                margin: 0 20px 20px 0;
+                /* Add space between elements */
+            }
+
+            .metgi p {
+                font-size: 12px;
+            }
+
+            .metgi i {
+                font-size: 28px;
+            }
+
+            .vsxgfgs {
+                width: 220px;
+            }
+
+            .sfadv {
+                padding: 4rem 0 0 0;
+            }
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            .bhehyrt {
+                height: auto;
+            }
+
+            .sfadv {
+                padding: 4rem 0 0 0;
+                flex-wrap: wrap;
+                gap: 113px;
+            }
+
+            .vsxgfgs {
+                margin: 0 4rem !important;
+            }
+
+            .thumbnail-slider .splide__slide.is-active {
+                transform: unset;
+                transition: all .5s ease-in-out;
+                filter: brightness(1);
+            }
+
+            .thumbnail-slider .splide__slide {
+                border-radius: 0px;
+                overflow: hidden;
+            }
+
+            .thumbnail-slider .splide__slide:not(.is-active)+.splide__slide {
+                margin-left: 0px;
+                transition: all .5s ease-in-out;
+            }
+
+            .thumbnail-slider .splide__slide.is-active+.splide__slide {
+                margin-left: 0px;
+                transition: all .5s ease-in-out;
+            }
+
+            .splide__track--nav>.splide__list>.splide__slide {
+                border: 0 solid transparent;
+                cursor: pointer;
+            }
+
+            .splide__track--nav>.splide__list>.splide__slide.is-active {
+                border: 0px solid white !important;
+            }
+
+            .main-slider .slide_content p {
+                width: 100%;
+            }
+
+            .vbfont {
+                font-size: 40px;
+            }
+
+            .alskndf {
+                height: 133rem;
+            }
+            .cus_h:nth-of-type(1) {
+        height: 70%;
+    }
+            .cus_h:nth-of-type(2) {
+        height: 30%;
+        margin-top: 2rem;
+    }
+    .afjqaf{
+            height: 50%;
+        }
+    .afjqaf:nth-of-type(2){
+            height: 50%;
+            /* margin-top: 2rem; */
+        }
+        }
     </style>
     <div id="sliderTop" class="vh-100">
         <div class="splide main-slider" style="height: inherit;">
             <div class="splide__track" style="height: inherit;">
                 <ul class="splide__list" style="height: inherit;">
                     <li class="splide__slide" style="height: inherit;">
-                        <div class="slide_content text-white w-75" style="padding: 120px 0 120px 120px;">
-                            <p class="text-decoration-underline" style="text-underline-offset: 8px;">Discover and enjoy</p>
-                            <h1 class="fw-bold" style="font-size: 60px;">Adventure in the Alps</h1>
-                            <p class="w-50">Experience the thrill of the Swiss Alps
+                        <div class="slide_content text-white w-75" style="">
+                            <p class="text-decoration-underline" style="text-underline-offset: 8px;">Discover and enjoy
+                            </p>
+                            <h1 class="fw-bold vbfont">Adventure in the Alps</h1>
+                            <p class="">Experience the thrill of the Swiss Alps
                                 Explore the majestic beauty of Switzerland's mountains.
                                 Embark on an unforgettable journey through the Swiss Alps.</p>
                         </div>
                         <img style="height: inherit;" src="<%= basePath %>img/sl1.jpg" alt="Image 1">
                     </li>
                     <li class="splide__slide" style="height: inherit;">
-                        <div class="slide_content text-white w-75" style="padding: 120px 0 120px 120px;">
-                            <p class="text-decoration-underline" style="text-underline-offset: 8px;">Bask in Santorini's Sunshine</p>
-                            <h1 class="fw-bold" style="font-size: 60px;">Sunny Escapes in Santorini.</h1>
-                            <p class="w-50">Escape to the picturesque island paradise of Santorini.
+                        <div class="slide_content text-white w-75">
+                            <p class="text-decoration-underline" style="text-underline-offset: 8px;">Bask in Santorini's
+                                Sunshine</p>
+                            <h1 class="fw-bold vbfont">Sunny Escapes in Santorini.</h1>
+                            <p class="">Escape to the picturesque island paradise of Santorini.
                                 Indulge in the beauty of Santorini's whitewashed cliffs and crystal-clear waters.</p>
                         </div>
-                        <img style="height: inherit;"src="<%= basePath %>img/sl2.jpg" alt="Image 2"></li>
-                        <li class="splide__slide" style="height: inherit;">
-                            <div class="slide_content text-white w-75" style="padding: 120px 0 120px 120px;">
-                                <p class="text-decoration-underline" style="text-underline-offset: 8px;">Unveil Rome's Ancient Splendor</p>
-                                <h1 class="fw-bold" style="font-size: 60px;">Culture and History in Rome</h1>
-                                <p class="w-50">Immerse yourself in the timeless beauty of Rome
-                                    Explore the ancient wonders of the Eternal City
-                                    Indulge in the rich history and vibrant culture of Rome.</p>
-                            </div>
-                            <img style="height: inherit;" src="<%= basePath %>img/sl3.jpg" alt="Image 3"></li>
-                            <li class="splide__slide" style="height: inherit;">
-                                <div class="slide_content text-white w-75" style="padding: 120px 0 120px 120px;">
-                                    <p class="text-decoration-underline" style="text-underline-offset: 8px;">Trek the Amazon's Untamed Wilds</p>
-                                    <h1 class="fw-bold" style="font-size: 60px;">Adventure in the Amazon Rainforest</h1>
-                                    <p class="w-50">Embark on a thrilling adventure in the heart of the Amazon
-                                        Discover the wonders of the world's largest rainforest
-                                        Explore the biodiversity of the Amazon with expert guides.</p>
-                                </div>                           
-                                <img style="height: inherit;"src="<%= basePath %>img/sl4.jpg" alt="Image 2"></li>
-                                <li class="splide__slide" style="height: inherit;">
-                                    <div class="slide_content text-white w-75" style="padding: 120px 0 120px 120px;">
-                                        <p class="text-decoration-underline" style="text-underline-offset: 8px;">Relax in the Maldives' Island Serenity</p>
-                                        <h1 class="fw-bold" style="font-size: 60px;">Relaxation in the Maldives</h1>
-                                        <p class="w-50">Escape to paradise in the Maldives
-                                            Indulge in luxury and tranquility on the pristine beaches of the Maldives
-                                            Experience ultimate relaxation in the idyllic surroundings of the Maldives.</p>
-                                    </div>
-                    <img style="height: inherit;"src="<%= basePath %>img/sl5.jpg" alt="Image 1">
+                        <img style="height: inherit;" src="<%= basePath %>img/sl2.jpg" alt="Image 2">
+                    </li>
+                    <li class="splide__slide" style="height: inherit;">
+                        <div class="slide_content text-white w-75">
+                            <p class="text-decoration-underline" style="text-underline-offset: 8px;">Unveil Rome's
+                                Ancient Splendor</p>
+                            <h1 class="fw-bold vbfont">Culture and History in Rome</h1>
+                            <p class="">Immerse yourself in the timeless beauty of Rome
+                                Explore the ancient wonders of the Eternal City
+                                Indulge in the rich history and vibrant culture of Rome.</p>
+                        </div>
+                        <img style="height: inherit;" src="<%= basePath %>img/sl3.jpg" alt="Image 3">
+                    </li>
+                    <li class="splide__slide" style="height: inherit;">
+                        <div class="slide_content text-white w-75">
+                            <p class="text-decoration-underline" style="text-underline-offset: 8px;">Trek the Amazon's
+                                Untamed Wilds</p>
+                            <h1 class="fw-bold vbfont">Adventure in the Amazon Rainforest</h1>
+                            <p class="">Embark on a thrilling adventure in the heart of the Amazon
+                                Discover the wonders of the world's largest rainforest
+                                Explore the biodiversity of the Amazon with expert guides.</p>
+                        </div>
+                        <img style="height: inherit;" src="<%= basePath %>img/sl4.jpg" alt="Image 2">
+                    </li>
+                    <li class="splide__slide" style="height: inherit;">
+                        <div class="slide_content text-white w-75">
+                            <p class="text-decoration-underline" style="text-underline-offset: 8px;">Relax in the
+                                Maldives' Island Serenity</p>
+                            <h1 class="fw-bold vbfont">Relaxation in the Maldives</h1>
+                            <p class="">Escape to paradise in the Maldives
+                                Indulge in luxury and tranquility on the pristine beaches of the Maldives
+                                Experience ultimate relaxation in the idyllic surroundings of the Maldives.</p>
+                        </div>
+                        <img style="height: inherit;" src="<%= basePath %>img/sl5.jpg" alt="Image 1">
                     </li>
 
                 </ul>
@@ -192,8 +458,8 @@
     <!-- slider section-->
     <!-- vetnam section -->
     <div class="container my-4 section_padding">
-        <div class="row gx-4 justify-content-between">
-            <div class="col-7">
+        <div class="row gx-4 justify-content-center justify-content-lg-between">
+            <div class="col-lg-6 col-xl-7 col-12">
                 <div>
                     <h2 class="fs-1" style="font-weight: 900;">EXPOLRE VIETNAM WITH US</h2>
                     <p class="font_primary my-4">
@@ -225,7 +491,8 @@
                                 <img class="h-100 w-100" src="<%= basePath %>img/sl4.jpg" alt="Image 2">
                             </li>
                             <li class="splide__slide boxshadow rounded-2">
-                                <p class="text-white m-5 fs-6 fw-bold position-relative z-3">Phong Nha-Ke Bang National Park</p>
+                                <p class="text-white m-5 fs-6 fw-bold position-relative z-3">Phong Nha-Ke Bang National
+                                    Park</p>
                                 <img class="h-100 w-100" style="height: inherit;" src="<%= basePath %>img/sl1.jpg"
                                     alt="Image 1">
                             </li>
@@ -233,21 +500,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 oscillate row">
-                <div class="col-6 " style="transform: translateY(-41px);">
-                    <div class=" my-4 rounded-2 overflow-hidden shadow-lg" style="aspect-ratio: 1/1;width: 239px;">
+            <div class="col-lg-6 col-xl-5 col-12 oscillate row">
+                <div class="col-6 rfaf">
+                    <div class=" my-4 rounded-2 overflow-hidden shadow-lg dfgi  m-auto">
                         <img class="w-100" style="height: inherit;height: 100%;" src="<%= basePath %>img/sl1.jpg"
                             alt="Image 1">
                     </div>
-                    <div class=" my-2 rounded-2 overflow-hidden shadow-lg" style="aspect-ratio: 1/1;width: 239px;">
+                    <div class=" my-2 rounded-2 overflow-hidden shadow-lg dfgi m-auto">
                         <img class="w-100 " src="<%= basePath %>img/sl4.jpg" alt="Image 2" style="height: 100%;">
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class=" my-4 rounded-2 overflow-hidden shadow-lg" style="aspect-ratio: 1/1;width: 239px;">
+                <div class="col-6 nmkmfgy">
+                    <div class=" my-4 rounded-2 overflow-hidden shadow-lg dfgi m-auto">
                         <img class="w-100 " src="<%= basePath %>img/sl4.jpg" alt="Image 2" style="height: 100%;">
                     </div>
-                    <div class=" my-2 rounded-2 overflow-hidden shadow-lg" style="aspect-ratio: 1/1;width: 239px;">
+                    <div class=" my-2 rounded-2 overflow-hidden shadow-lg dfgi m-auto">
                         <img class="w-100" style="height: inherit;height: 100%;" src="<%= basePath %>img/sl1.jpg"
                             alt="Image 1">
                     </div>
@@ -263,10 +530,10 @@
         <!-- select duration -->
         <!-- budget -->
         <!-- tour type -->
-        <div class="shadow-lg bg-white p-5">
+        <div class="shadow-lg bg-white p-4">
             <form method="post">
-                <div class="d-flex align-items-end">
-                    <div class="flex-grow-1 mx-2">
+                <div class="d-flex align-items-end flex-wrap">
+                    <div class="flex-grow-1 m-2">
                         <label for="" class="w-100 my-2">Select Destination</label>
                         <div class=" p-3 bg-light text-muted">
                             <select name="s" class="border-0 bg-transparent outline-0 w-100">
@@ -278,21 +545,21 @@
                             </select>
                         </div>
                     </div>
-                    <div class="flex-grow-1 mx-2">
+                    <div class="flex-grow-1 m-2">
                         <label for="" class="w-100 my-2">Date</label>
                         <div class=" p-3 bg-light text-muted">
                             <input type="text" id="datepicker" placeholder="DD / MM / YY"
                                 class="border-0 bg-transparent outline-0 w-100">
                         </div>
                     </div>
-                    <div class="flex-grow-1 mx-2">
+                    <div class="flex-grow-1 m-2">
                         <label for="" class="w-100 my-2">Duration</label>
                         <div class=" p-3 bg-light text-muted">
                             <input type="text" id="" class="border-0 bg-transparent outline-0 w-100"
                                 placeholder="7 Days">
                         </div>
                     </div>
-                    <div class="flex-grow-1 mx-2">
+                    <div class="flex-grow-1 m-2">
                         <label for="" class="w-100 my-2">Tour Type</label>
                         <div class=" p-3 bg-light text-muted">
                             <select name="s" class="border-0 bg-transparent outline-0 w-100">
@@ -303,7 +570,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="flex-grow-1 mx-2">
+                    <div class="flex-grow-1 m-2">
                         <button type="button" class="w-100 border-0 gradiant p-3 text-white">Inquire Now</button>
                     </div>
                 </div>
@@ -313,18 +580,17 @@
     <!-- top destination  -->
     <div class="container my-4 section_padding">
         <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <h2 class=" fs-1 " style="font-weight: 900;">TOP NOTCH DESTINATION</h2>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <p>Aperiam sociosqu urna praesent, tristique, corrupti condimentum asperiores platea ipsum ad arcu.
                     Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt.</p>
             </div>
-            <div class="row my-4" style="
-            height: 36rem;">
-                <div class="col-7 h-100">
+            <div class="row my-4 alskndf">
+                <div class="col-xl-7 my-3 col-md-12 cus_h">
                     <div class="row h-100">
-                        <div class="col-6 h-100">
+                        <div class="col-md-6 col-12 afjqaf">
                             <div class="h-100 p-2 bg-white shadow-lg position-relative">
                                 <div class="hover h-100 position-relative">
                                     <p class="position-absolute z-1 top-0 start-0 bg-white p-2 m-4"
@@ -337,15 +603,14 @@
                                     </div>
                                     <div class="overlay"></div>
                                     <img class="h-100  w-100" style="width: 100%; object-fit:cover;"
-                                        src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg"
-                                        alt="Image 2">
+                                        src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt="Image 2">
                                 </div>
                                 <!-- the grand palace -->
                             </div>
 
                         </div>
-                        <div class="col-6 h-100">
-                            <div class="h-100 p-2 bg-white shadow-lg position-relative">
+                        <div class="col-md-6 col-12 afjqaf">
+                            <div class="h-100 p-2 bg-white shadow-lg position-relative my-3">
                                 <div class="hover h-100 position-relative">
                                     <p class="position-absolute z-1 top-0 start-0 bg-white p-2 m-4"
                                         style="letter-spacing: 1pt;">Norway</p>
@@ -365,8 +630,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 h-100">
-                    <div class="col-12  h-50 pb-2">
+                <div class="col-xl-5 col-md-12  my-3 cus_h">
+                    <div class="col-12 col-12  h-50 pb-2">
                         <div class="shadow-lg p-2 bg-white position-relative h-100">
                             <div class="hover h-100 position-relative">
                                 <p class="position-absolute z-1 top-0 start-0 bg-white p-2 m-4"
@@ -409,7 +674,7 @@
                 </div>
 
             </div>
-            <div class="col-12 d-flex justify-content-center mt-5  ">
+            <div class="col-12 d-flex justify-content-center mt-5  alamk">
                 <button type="button" class="border-0 gradiant p-3 text-white ">Explore Destinations</button>
             </div>
         </div>
@@ -418,9 +683,9 @@
     <div class="container my-4 ">
         <h2 class="text-center fs-1 pb-5 mb-5" style="font-weight: 900;">PACKAGES, <span class="fs-4">you will fall in
                 love with</span> </h2>
-        <div class="d-flex justify-content-between packges_box">
+        <div class="d-flex packges_box">
             <!-- one -->
-            <div style="width: 265px;" class="shadow-sm card_p">
+            <div class="shadow-sm card_p">
                 <div class="position-relative" style="height: 320px; ">
                     <img class="h-100 w-100" src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
@@ -463,7 +728,7 @@
 
             </div>
             <!-- Two -->
-            <div style="width: 265px;" class="shadow-sm card_p">
+            <div class="shadow-sm card_p">
                 <div class="position-relative" style="height: 320px; ">
                     <img class="h-100 w-100" src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
@@ -506,7 +771,7 @@
 
             </div>
             <!-- three -->
-            <div style="width: 265px;" class="shadow-sm card_p">
+            <div class="shadow-sm card_p">
                 <div class="position-relative" style="height: 320px; ">
                     <img class="h-100 w-100" src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
@@ -549,7 +814,7 @@
 
             </div>
             <!-- four -->
-            <div style="width: 265px;" class="shadow-sm card_p">
+            <div class="shadow-sm card_p">
                 <div class="position-relative" style="height: 320px; ">
                     <img class="h-100 w-100" src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
@@ -596,28 +861,37 @@
     <!-- why choose us -->
     <div class="container my-4 section_padding">
         <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">WHY CHOOSE US !</h2>
-        <p class="text-center my-4">Aperiam sociosqu urna praesent, tristique, corrupti condimentum asperiores platea ipsum ad arcu. Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt corrupti condimentum asperiores platea ipsum ad arcu. Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt.</p>
-        <div class="d-flex justify-content-center section_padding">
-           <div class="shadow-lg bg-white rounded p-4 position-relative mx-4" style="width: 307px;aspect-ratio: 1/1;transform: rotate(45deg);transform-origin: center center;">
-            <div class="containt-div text-center position-absolute p-4" style="transform: rotate(-45deg) translate(-8%, -79%);top: 50%;left: 50%;width: 100%;transform-origin: center center;">
-                <i class="fa-regular fa-face-smile-wink gradiant-text fa-2xl"></i>
-                <h6 class="fw-bold my-3">1000+ Happy Cutomer</h6>
-                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
+        <p class="text-center my-4">Aperiam sociosqu urna praesent, tristique, corrupti condimentum asperiores platea
+            ipsum ad arcu. Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt corrupti condimentum asperiores
+            platea ipsum ad arcu. Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt.</p>
+        <div class="d-flex justify-content-center sfadv">
+            <div class="shadow-lg bg-white rounded p-4 position-relative mx-4 vsxgfgs" containt-div text-center
+                position-absolute p-4 metgi>
+                <div class="containt-div text-center position-absolute p-4 metgi">
+                    <i class="fa-regular fa-face-smile-wink gradiant-text "></i>
+                    <h6 class="fw-bold my-3">1000+ Happy Cutomer</h6>
+                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa
+                        deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
+                </div>
             </div>
-           </div>
-        <div class="shadow-lg bg-white rounded p-4 position-relative mx-3" style="width: 307px;aspect-ratio: 1/1;transform: rotate(45deg);transform-origin: center center;z-index: 1;">
-            <div class="containt-div text-center position-absolute p-4" style="transform: rotate(-45deg) translate(-8%, -79%);top: 50%;left: 50%;width: 100%;transform-origin: center center;">
-                <i class="fa-solid fa-people-robbery gradiant-text  fa-2xl"></i>
-                <h6 class="fw-bold my-3">Memorable Tours</h6>
-                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
+            <div class="shadow-lg bg-white rounded p-4 position-relative mx-3 vsxgfgs z-2">
+                <div class="containt-div text-center position-absolute p-4 metgi">
+                    <i class="fa-solid fa-people-robbery gradiant-text  "></i>
+                    <h6 class="fw-bold my-3">Memorable Tours</h6>
+                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa
+                        deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
+                </div>
             </div>
-           </div><div class="shadow-lg bg-white rounded p-4 position-relative mx-5" style="width: 307px;aspect-ratio: 1/1;transform: rotate(45deg);transform-origin: center center;">
-            <div class="containt-div text-center position-absolute p-4" style="transform: rotate(-45deg) translate(-8%, -79%);top: 50%;left: 50%;width: 100%;transform-origin: center center;">
-                <i class="fa-solid fa-hand-holding-dollar gradiant-text  fa-2xl"></i>
-                <h6 class="fw-bold my-3">Affordable Price</h6>
-                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
+            <div class="shadow-lg bg-white rounded p-4 position-relative mx-5 vsxgfgs" containt-div text-center
+                position-absolute p-4 metgi>
+                <div class="containt-div text-center position-absolute p-4 metgi">
+                    <i class="fa-solid fa-hand-holding-dollar gradiant-text  "></i>
+                    <h6 class="fw-bold my-3">Affordable Price</h6>
+                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa
+                        deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
+                </div>
             </div>
-           </div></div>
+        </div>
     </div>
     <!-- why choose us -->
     <!-- offers you wish for -->
@@ -625,11 +899,11 @@
         <h2 class="text-center fs-1 pb-5 mb-5" style="font-weight: 900;">OFFERS, <span class="fs-4">you wish for</span>
         </h2>
         <div class="offer_container row">
-            <div class="col-6" style="height: 285px;">
+            <div class="col-lg-6 col-12 my-3" style="height: 285px;">
                 <div class="d-flex h-100">
                     <div class="w-50 position-relative h-100">
-                        <img src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
-                            class="w-100 h-100" style="object-fit: cover;">
+                        <img src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt="" class="w-100 h-100"
+                            style="object-fit: cover;">
                         <div class="position-absolute top-0 end-0 m-3 bg-white p-2">
                             <h6 class="mb-0">New Zealand</h6>
                         </div>
@@ -658,11 +932,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6" style="height: 285px;">
+            <div class="col-lg-6 col-12 my-3" style="height: 285px;">
                 <div class="d-flex h-100">
                     <div class="w-50 position-relative h-100">
-                        <img src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
-                            class="w-100 h-100" style="object-fit: cover;">
+                        <img src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt="" class="w-100 h-100"
+                            style="object-fit: cover;">
                         <div class="position-absolute top-0 end-0 m-3 bg-white p-2">
                             <h6 class="mb-0">New Zealand</h6>
                         </div>
@@ -698,7 +972,7 @@
     <!-- book now -->
     <div class="container my-4 section_padding">
         <div class="row justify-content-between">
-            <div class="col-6 row">
+            <div class="col-md-6 col-12 row">
                 <h2 class=" fs-1 py-3 mb-4" style="font-weight: 900;"> GIVE US A CALL
                 </h2>
                 <div class="gallery">
@@ -735,7 +1009,7 @@
                 </div>
 
             </div>
-            <div class="col-6 p-3">
+            <div class="col-md-6 col-12 p-3">
                 <form method="post">
                     <input type="text" name="" class="border px-2 py-3 my-3 w-100" placeholder="Name">
                     <input type="email" name="" class="border px-2 py-3 my-3 w-100" placeholder="Email">
@@ -751,46 +1025,56 @@
     <!-- testimonial -->
     <div class="test_bg-img">
         <div class="container my-5 py-5 h-100">
-            <div class="row h-100">
-                <div class="col-6 h-100 d-flex align-items-center justfy-content-center text-white">
+            <div class="row bhehyrt">
+                <div class="col-md-6 col-12 h-100 d-flex align-items-center justfy-content-center text-white">
                     <div class="">
-                        <h2 class=" fs-1 py-3 mb-4" style="font-weight: 900;"> OUR <br> HAPPY <br> CLIENTS
-                        </h2>
-                        <p class="text-white-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque labore
-                            laborum similique pariatur totam alias odit laboriosam, qui nobis blanditiis maxime possimus
-                            autem distinctio perspiciatis beatae consectetur eveniet? Inventore, dolores quidem iste
-                            fuga dignissimos sed ea laudantium quod! Asperiores, deleniti!</p>
+                        <h2 class=" fs-1 py-3 mb-4 d-none d-md-block" style="font-weight: 900;"> OUR <br> HAPPY <br>
+                            CLIENTS
+                            <h2 class=" fs-1 py-3 mb-4 d-md-none d-block" style="font-weight: 900;"> OUR HAPPY CLIENTS
+                            </h2>
+                            <p class="text-white-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                                labore
+                                laborum similique pariatur totam alias odit laboriosam, qui nobis blanditiis maxime
+                                possimus
+                                autem distinctio perspiciatis beatae consectetur eveniet? Inventore, dolores quidem iste
+                                fuga dignissimos sed ea laudantium quod! Asperiores, deleniti!</p>
                     </div>
                 </div>
-                <div class="col-6 h-100 d-flex align-items-center justfy-content-center text-white">
+                <div class="col-md-6 col-12 h-100 d-flex align-items-center justfy-content-center text-white">
 
                     <div class="splide testimonial">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
                                     <div class="text-center p-3">
-                                        <p>Traveling with [Company Name] was a life-changing experience! From breathtaking
-                                            views to seamless organization, every moment was unforgettable. I can't wait to
+                                        <p>Traveling with [Company Name] was a life-changing experience! From
+                                            breathtaking
+                                            views to seamless organization, every moment was unforgettable. I can't wait
+                                            to
                                             embark on my next adventure with them.</p>
                                         <span class="float-end fw-bold">By Emma Smith</span>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="text-center p-3">
-                                        <p>Traveling with [Company Name] was an absolute joy! The guides were knowledgeable,
-                                            the accommodations were superb, and the memories made will last a lifetime.</p>
+                                        <p>Traveling with [Company Name] was an absolute joy! The guides were
+                                            knowledgeable,
+                                            the accommodations were superb, and the memories made will last a lifetime.
+                                        </p>
                                         <span class="float-end fw-bold">By Alexandra Lee</span>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="text-center p-3">
-                                        <p>I cannot recommend [Company Name] enough! From start to finish, every detail was
-                                            taken care of, allowing me to relax and fully immerse myself in the adventure.
+                                        <p>I cannot recommend [Company Name] enough! From start to finish, every detail
+                                            was
+                                            taken care of, allowing me to relax and fully immerse myself in the
+                                            adventure.
                                         </p>
                                         <span class="float-end fw-bold">By Emily Johnson</span>
                                     </div>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -832,9 +1116,19 @@
                     pagination: false,
                     cover: true,
                     breakpoints: {
-                        600: {
-                            fixedWidth: 66,
-                            fixedHeight: 40,
+                        1288: {
+                            fixedWidth: 190,
+                            fixedHeight: 126,
+                        },
+                        1024: {
+                            fixedWidth: 140,
+                            fixedHeight: 90,
+                        },
+                        768: {
+                            fixedWidth: 100,
+                            fixedHeight: 60,
+                            gap: 0,
+                            // focus : 'center'
                         },
                     }
                 }).mount();
