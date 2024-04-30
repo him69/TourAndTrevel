@@ -233,6 +233,11 @@ height: 500px;
   background: #eee;
   position: absolute;
 }
+.linksBox:nth-last-child(2)::after {
+
+  display: none;
+}
 .linksBox {
   position: relative;
 }
+

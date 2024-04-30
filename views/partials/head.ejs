@@ -19,13 +19,22 @@
 </head>
 
 <body>
-    <nav class="bg-white shadow-sm position-fixed top-0 w-100" style="z-index: 99;">
+    <nav class="bg-white shadow-sm position-fixed top-0 w-100 " style="z-index: 99;">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center ">
-                <div class="siteLogo p-2">
-                    <img src="img/logo.png" alt="" class="w-100 h-100 object-fit-contain">
+            <div class="d-flex justify-content-between align-items-center flex-column  flex-lg-row ">
+                <div class="align-self-start align-self-md-center align-self-lg-start d-flex justify-content-between anfd align-items-center">
+                    <div class="siteLogo p-2 ">
+                        <img src="img/logo.png" alt="" class="w-100 h-100 object-fit-contain">
+                    </div>
+                    <div class="mobile_toggle d-flex d-md-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <div class="navigation d-flex align-items-center">
+                
+                
+                <div class="navigation d-flex align-items-center flex-column flex-md-row p-2 closed">
                     <div class="linksBox">
                         <a href="#" class="p-3 text-decoration-none mx-2 text-dark">Home</a>
                     </div>
@@ -37,7 +46,7 @@
                         <a href="#" class="p-3 text-decoration-none mx-2 text-dark">Packages</a>
                         <!-- <div class="dropdown"></div> -->
                     </div>
-                    <div class="">
+                    <div class="linksBox">
                         <a href="#" class="p-3 text-decoration-none mx-2 text-dark">Plane trip</a>
                     </div>
                     <div class="border bg-white rounded-pill px-2 py-2">

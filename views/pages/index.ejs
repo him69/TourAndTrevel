@@ -1,5 +1,9 @@
 <%- include('../partials/head') %>
     <style>
+        /* navigation */
+        .anfd{
+            width: unset;
+        }
         @keyframes oscillate {
             0% {
                 transform: translateY(0);
@@ -155,7 +159,8 @@
         .alamk {
             padding-top: 0;
         }
-        .afjqaf{
+
+        .afjqaf {
             height: 100%;
         }
 
@@ -168,6 +173,7 @@
 
         .card_p {
             width: 265px;
+            height: 320px;
             margin-bottom: 20px;
         }
 
@@ -356,20 +362,96 @@
             .alskndf {
                 height: 133rem;
             }
+
             .cus_h:nth-of-type(1) {
-        height: 70%;
-    }
+                height: 70%;
+            }
+
             .cus_h:nth-of-type(2) {
-        height: 30%;
-        margin-top: 2rem;
-    }
-    .afjqaf{
-            height: 50%;
+                height: 30%;
+                margin-top: 2rem;
+            }
+
+            .afjqaf {
+                height: 50%;
+            }
+
+            .afjqaf:nth-of-type(2) {
+                height: 50%;
+                /* margin-top: 2rem; */
+            }
+        
+            .card_p {
+                margin: 0 0 20px 0;
+            }
+
+            .linksBox:after {
+                display: none;
+            }
+
+            .navigation {
+                padding: 1rem;
+                height: 297px;
+            }
+
+            .mobile_toggle {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 20px;
+                cursor: pointer;
+            }
+
+            .mobile_toggle span {
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: #000;
+                transition: transform 0.3s ease;
+            }
+
+            .mobile_toggle.open span:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+
+            .mobile_toggle.open span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .mobile_toggle.open span:nth-child(3) {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+
+            .navigation {
+                transition: all 0.3s ease;
+            }
+
+            .navigation.open {
+                transform: translateY(0);
+            }
+
+            .navigation.closed {
+                transform: translateY(-100%);
+                height: 0;
+                overflow: hidden;
+            }
+.anfd{
+    width: 100%;
+}
+            .linksBox {
+                padding: 1rem 0;
+            }
         }
-    .afjqaf:nth-of-type(2){
-            height: 50%;
-            /* margin-top: 2rem; */
-        }
+
+        @media only screen and (max-width: 545px) {
+            .main-slider .slide_content {
+                padding: 120px 0 120px 21px;
+            }
+
+            .thumbnail-slider {
+                display: none;
+            }
         }
     </style>
     <div id="sliderTop" class="vh-100">
@@ -686,7 +768,7 @@
         <div class="d-flex packges_box">
             <!-- one -->
             <div class="shadow-sm card_p">
-                <div class="position-relative" style="height: 320px; ">
+                <div class="position-relative h-100" style="">
                     <img class="h-100 w-100" src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
                     <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
@@ -729,7 +811,7 @@
             </div>
             <!-- Two -->
             <div class="shadow-sm card_p">
-                <div class="position-relative" style="height: 320px; ">
+                <div class="position-relative h-100" style=" ">
                     <img class="h-100 w-100" src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
                     <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
@@ -772,7 +854,7 @@
             </div>
             <!-- three -->
             <div class="shadow-sm card_p">
-                <div class="position-relative" style="height: 320px; ">
+                <div class="position-relative h-100" style=" ">
                     <img class="h-100 w-100" src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
                     <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
@@ -815,7 +897,7 @@
             </div>
             <!-- four -->
             <div class="shadow-sm card_p">
-                <div class="position-relative" style="height: 320px; ">
+                <div class="position-relative h-100" style=" ">
                     <img class="h-100 w-100" src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt=""
                         style="object-fit: cover;">
                     <div class="des_type position-absolute top-0 end-0 m-3 bg-white p-2">
@@ -1221,4 +1303,15 @@
                     });
                 }
             });
+            // togle menu
+            document.addEventListener("DOMContentLoaded", function () {
+                var mobileToggle = document.querySelector(".mobile_toggle");
+                var navigation = document.querySelector(".navigation");
+
+                mobileToggle.addEventListener("click", function () {
+                    navigation.classList.toggle("closed");
+                });
+            });
+
+
         </script>

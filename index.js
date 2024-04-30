@@ -5,7 +5,7 @@ const port = 3000
 // specifie which engin to use
 app.set('view engine','ejs')
 // base path
-const basePath = 'http://192.168.1.46:3000/';
+const basePath = 'http://192.168.1.45:3000/';
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
