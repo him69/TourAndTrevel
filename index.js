@@ -1,11 +1,11 @@
 const express = require('express')
 const app = express()
 const port = 3000
-
+require('dotenv').config();
 // specifie which engin to use
 app.set('view engine','ejs')
 // base path
-const basePath = 'http://192.168.1.45:3000/';
+const basePath =  process.env.BASE_PATH;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
