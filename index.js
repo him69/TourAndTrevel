@@ -5,7 +5,7 @@ require('dotenv').config();
 // specifie which engin to use
 app.set('view engine','ejs')
 // base path
-const basePath =  process.env.BASE_PATH;
+const basePath = 'http://localhost:3000/';
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
