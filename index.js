@@ -1,11 +1,11 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
 require('dotenv').config();
 // specifie which engin to use
 app.set('view engine','ejs')
 // base path
-const basePath = 'http://localhost:3000/';
+const basePath = `https://tour-and-trevel.vercel.app//`;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
