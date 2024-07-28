@@ -5,7 +5,7 @@ require('dotenv').config();
 // specifie which engin to use
 app.set('view engine','ejs')
 // base path
-const basePath = `https://tour-and-trevel.vercel.app//`;
+const basePath = `https://tour-and-trevel.vercel.app/`;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
