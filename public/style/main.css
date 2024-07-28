@@ -6,6 +6,7 @@
 }
 body{
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
 h2,h1{
     font-family: "Raleway", sans-serif;
@@ -34,7 +35,7 @@ p{
 }
 .siteLogo{
     height: 100%;
-    width: 250px;
+    width: 150px;
 }
 .font_primary{
     font-size: 16px;
@@ -218,7 +219,7 @@ input:focus,select:focus,textarea:focus{
 }
 /* testimonial */
 .test_bg-img{
-  background: linear-gradient(45deg, #0000006b, #0000006b), url(http://localhost:3000/img/kal-visuals-aK4iPNYipnU-unsplash.jpg);
+  background: linear-gradient(45deg, #0000006b, #0000006b), url(/img/kal-visuals-aK4iPNYipnU-unsplash.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;

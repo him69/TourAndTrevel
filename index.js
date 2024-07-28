@@ -8,7 +8,8 @@ app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 // base path
-const basePath = process.env.BASE_PATH  || '';
+// const basePath = process.env.BASE_PATH  || '';
+const basePath = 'http://192.168.1.36:3001/';
 // app.use(express.static('public'));
 
 app.get('/', (req, res) => {

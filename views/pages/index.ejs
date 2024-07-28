@@ -220,10 +220,10 @@
             .rfaf {
                 transform: translateY(3px);
             }
-
+/* 
             .nmkmfgy {
                 transform: translateY(71px);
-            }
+            } */
 
             .main-slider .slide_content {
                 padding: 120px 0 120px 76px;
@@ -243,10 +243,12 @@
             .cus_h {
                 height: 50%;
             }
-
+            .card_p .tr{
+                opacity: 0;
+            }
             .card_p:hover .tr {
                 transform: translateX(0);
-                opacity: 0;
+                opacity: 1;
                 transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 z-index: 9;
                 border-color: #dee2e6;
@@ -255,7 +257,7 @@
 
             .packges_box .card_p:last-child:hover .tr {
                 transform: translateX(0%);
-                opacity: 0;
+                opacity: 1;
                 transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 z-index: 9;
                 border-color: #dee2e6;
@@ -264,6 +266,9 @@
 
             .metgi {
                 transform: rotate(-45deg) translate(4%, -66%);
+            }
+            .packges_info{
+                z-index: 12;
             }
         }
 
@@ -452,7 +457,27 @@
             .thumbnail-slider {
                 display: none;
             }
+            .offer_container .col-lg-6.col-12.my-3{
+                height: 30rem !important;
+            }
+            .offer_container .d-flex.h-100 {
+                flex-wrap: wrap !important;
+            }
+            .offer_container .afas{
+                width: unset !important;
+                height:unset !important;
+            }
         }
+        .offer_container .col-lg-6.col-12.my-3{
+                height: 285px;
+            }
+            .offer_container .d-flex.h-100 {
+                flex-wrap:nowrap;
+            }
+            .offer_container .afas{
+                width: 50%;
+                height: 100%;
+            }
     </style>
     <div id="sliderTop" class="vh-100">
         <div class="splide main-slider" style="height: inherit;">
@@ -583,7 +608,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-xl-5 col-12 oscillate row">
-                <div class="col-6 rfaf">
+                <div class="col-md-6 col-12 rfaf">
                     <div class=" my-4 rounded-2 overflow-hidden shadow-lg dfgi  m-auto">
                         <img class="w-100" style="height: inherit;height: 100%;" src="<%= basePath %>img/sl1.jpg"
                             alt="Image 1">
@@ -592,7 +617,7 @@
                         <img class="w-100 " src="<%= basePath %>img/sl4.jpg" alt="Image 2" style="height: 100%;">
                     </div>
                 </div>
-                <div class="col-6 nmkmfgy">
+                <div class="col-md-6 col-12 nmkmfgy">
                     <div class=" my-4 rounded-2 overflow-hidden shadow-lg dfgi m-auto">
                         <img class="w-100 " src="<%= basePath %>img/sl4.jpg" alt="Image 2" style="height: 100%;">
                     </div>
@@ -761,7 +786,7 @@
             </div>
         </div>
     </div>
-    <!-- pacages -->
+    <!-- packages -->
     <div class="container my-4 ">
         <h2 class="text-center fs-1 pb-5 mb-5" style="font-weight: 900;">PACKAGES, <span class="fs-4">you will fall in
                 love with</span> </h2>
@@ -941,49 +966,16 @@
         </div>
     </div>
     <!-- why choose us -->
-    <div class="container my-4 section_padding">
-        <h2 class="text-center fs-1 py-3 mb-4" style="font-weight: 900;">WHY CHOOSE US !</h2>
-        <p class="text-center my-4">Aperiam sociosqu urna praesent, tristique, corrupti condimentum asperiores platea
-            ipsum ad arcu. Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt corrupti condimentum asperiores
-            platea ipsum ad arcu. Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt.</p>
-        <div class="d-flex justify-content-center sfadv">
-            <div class="shadow-lg bg-white rounded p-4 position-relative mx-4 vsxgfgs" containt-div text-center
-                position-absolute p-4 metgi>
-                <div class="containt-div text-center position-absolute p-4 metgi">
-                    <i class="fa-regular fa-face-smile-wink gradiant-text "></i>
-                    <h6 class="fw-bold my-3">1000+ Happy Cutomer</h6>
-                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa
-                        deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
-                </div>
-            </div>
-            <div class="shadow-lg bg-white rounded p-4 position-relative mx-3 vsxgfgs z-2">
-                <div class="containt-div text-center position-absolute p-4 metgi">
-                    <i class="fa-solid fa-people-robbery gradiant-text  "></i>
-                    <h6 class="fw-bold my-3">Memorable Tours</h6>
-                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa
-                        deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
-                </div>
-            </div>
-            <div class="shadow-lg bg-white rounded p-4 position-relative mx-5 vsxgfgs" containt-div text-center
-                position-absolute p-4 metgi>
-                <div class="containt-div text-center position-absolute p-4 metgi">
-                    <i class="fa-solid fa-hand-holding-dollar gradiant-text  "></i>
-                    <h6 class="fw-bold my-3">Affordable Price</h6>
-                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus beatae ipsa
-                        deleniti corporis earum placeat ipsum quasi fugit molestiae recusandae?</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- why choose us -->
     <!-- offers you wish for -->
     <div class="container my-4 section_padding">
         <h2 class="text-center fs-1 pb-5 mb-5" style="font-weight: 900;">OFFERS, <span class="fs-4">you wish for</span>
         </h2>
-        <div class="offer_container row">
+        <div class="offer_container row gap-2">
             <div class="col-lg-6 col-12 my-3" style="height: 285px;">
                 <div class="d-flex h-100">
-                    <div class="w-50 position-relative h-100">
+                    <div class=" position-relative h-100 afas">
                         <img src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt="" class="w-100 h-100"
                             style="object-fit: cover;">
                         <div class="position-absolute top-0 end-0 m-3 bg-white p-2">
@@ -993,7 +985,7 @@
                             <p class="bagde-flag">20% OFF</p>
                         </div>
                     </div>
-                    <div class="bg-white w-50 h-100 p-3">
+                    <div class="bg-white  h-100 p-3 afas">
                         <p class="fw-bold">Experience the Ultimate Mountain Adventure </p>
                         <p style="color: #FFA500;"
                             class="badge rounded-pill bg-white border v_sm_text border-warning mb-0">ONLY 15DAYS LEFT
@@ -1016,7 +1008,7 @@
             </div>
             <div class="col-lg-6 col-12 my-3" style="height: 285px;">
                 <div class="d-flex h-100">
-                    <div class="w-50 position-relative h-100">
+                    <div class=" position-relative h-100 afas">
                         <img src="<%= basePath %>img/sung-shin-KipWnQeqUhc-unsplash.jpg" alt="" class="w-100 h-100"
                             style="object-fit: cover;">
                         <div class="position-absolute top-0 end-0 m-3 bg-white p-2">
@@ -1026,7 +1018,7 @@
                             <p class="bagde-flag">20% OFF</p>
                         </div>
                     </div>
-                    <div class="bg-white w-50 h-100 p-3">
+                    <div class="bg-white h-100 p-3 afas">
                         <p class="fw-bold">Experience the Ultimate Mountain Adventure </p>
                         <p style=" color: #FFA500;"
                             class="badge rounded-pill bg-white border v_sm_text border-warning mb-0">LIMITED TIME OFFER
@@ -1116,20 +1108,17 @@
                             </h2>
                             <p class="text-white-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
                                 labore
-                                laborum similique pariatur totam alias odit laboriosam, qui nobis blanditiis maxime
-                                possimus
-                                autem distinctio perspiciatis beatae consectetur eveniet? Inventore, dolores quidem iste
-                                fuga dignissimos sed ea laudantium quod! Asperiores, deleniti!</p>
+                                laborum </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-12 h-100 d-flex align-items-center justfy-content-center text-white">
 
-                    <div class="splide testimonial">
+                    <div class="splide testimonial w-100">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
                                     <div class="text-center p-3">
-                                        <p>Traveling with [Company Name] was a life-changing experience! From
+                                        <p>Traveling with tourzza was a life-changing experience! From
                                             breathtaking
                                             views to seamless organization, every moment was unforgettable. I can't wait
                                             to
@@ -1139,7 +1128,7 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="text-center p-3">
-                                        <p>Traveling with [Company Name] was an absolute joy! The guides were
+                                        <p>Traveling with tourzza was an absolute joy! The guides were
                                             knowledgeable,
                                             the accommodations were superb, and the memories made will last a lifetime.
                                         </p>
@@ -1148,7 +1137,7 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="text-center p-3">
-                                        <p>I cannot recommend [Company Name] enough! From start to finish, every detail
+                                        <p>I cannot recommend tourzza enough! From start to finish, every detail
                                             was
                                             taken care of, allowing me to relax and fully immerse myself in the
                                             adventure.
