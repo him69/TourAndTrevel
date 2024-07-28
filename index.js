@@ -4,10 +4,12 @@ const port = process.env.PORT || 3001;
 
 require('dotenv').config();
 // specifie which engin to use
-app.set('view engine','ejs')
+app.set("views", __dirname + "/views");
+app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
 // base path
 const basePath = process.env.BASE_PATH  || '';
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   let portfolioName = "himanshu"
